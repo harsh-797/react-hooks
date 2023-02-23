@@ -26,7 +26,7 @@ function useLocalStorageState(
     window.localStorage.setItem(key, serialize(name))
   }, [name, key])
 
-  return [name, setName]
+  return [name, setName, serialize]
 }
 
 function Greeting({initialName = ''}) {
